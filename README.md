@@ -7,9 +7,9 @@ A Docker image with SQL dumps for most Magento versions. Used on [devdrops/magen
 ```
 .
 ├── Dockerfile
-├── files
-│   └── magento-1.9.1.1.tar.gz
-└── README.md
+├── README.md
+└── releases
+    └── 1.9.1.1.sql
 
 ```
 
