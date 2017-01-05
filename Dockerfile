@@ -13,4 +13,6 @@ LABEL org.label-schema.name="Docker/Magento-MySQL" \
 
 COPY ./releases/* /releases/
 
-RUN mysql -uroot -proot < /releases/1.7.0.2.sql
+RUN service mysql restart && \
+    sleep 3 && \
+    mysql -u root < /releases/1.7.0.2.sql
